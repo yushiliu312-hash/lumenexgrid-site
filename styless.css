@@ -1,51 +1,74 @@
-/* ===== Base Reset ===== */
+/* =========================
+   GLOBAL RESET & BASE
+   ========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
-  color: #1e293b;
+  background-color: #0f172a; /* 深色工程背景 */
+  color: #e5e7eb;
   line-height: 1.6;
-  background-color: #ffffff;
 }
 
-/* ===== Common ===== */
+/* =========================
+   SECTION LAYOUT
+   ========================= */
 section {
   padding: 80px 10%;
 }
 
+/* =========================
+   TYPOGRAPHY
+   ========================= */
 h1 {
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  color: #ffffff;
 }
 
 h3 {
   font-size: 20px;
-  margin-bottom: 10px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #ffffff;
 }
 
 p {
   max-width: 720px;
   margin-bottom: 20px;
+  color: #cbd5f5;
 }
 
-/* ===== Buttons ===== */
+/* =========================
+   BUTTONS (工程级质感)
+   ========================= */
 .btn {
   display: inline-block;
-  padding: 14px 28px;
-  margin-right: 12px;
-  text-decoration: none;
+  padding: 14px 30px;
+  margin-right: 14px;
+  font-size: 14px;
   font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   border-radius: 4px;
   transition: all 0.2s ease;
 }
@@ -62,6 +85,7 @@ p {
 .btn.secondary {
   border: 2px solid #0b5ed7;
   color: #0b5ed7;
+  background-color: transparent;
 }
 
 .btn.secondary:hover {
@@ -69,17 +93,18 @@ p {
   color: #ffffff;
 }
 
-/* ===== Hero ===== */
+/* =========================
+   HERO SECTION
+   ========================= */
 .hero {
   background: linear-gradient(
-      rgba(15, 23, 42, 0.85),
-      rgba(15, 23, 42, 0.85)
+      rgba(2, 6, 23, 0.85),
+      rgba(2, 6, 23, 0.85)
     ),
     url("https://images.unsplash.com/photo-1581092334494-2c1c8b0f6f16");
   background-size: cover;
   background-position: center;
-  color: #ffffff;
-  padding: 120px 10%;
+  padding: 140px 10%;
 }
 
 .hero p {
@@ -87,52 +112,60 @@ p {
   max-width: 600px;
 }
 
-/* ===== Solutions ===== */
+/* =========================
+   SOLUTIONS
+   ========================= */
 .solutions {
-  background-color: #f8fafc;
+  background-color: #020617;
 }
 
 .solutions ul {
   list-style: none;
+  max-width: 720px;
 }
 
 .solutions li {
-  margin-bottom: 12px;
-  padding-left: 20px;
+  margin-bottom: 14px;
+  padding-left: 22px;
   position: relative;
+  color: #e5e7eb;
 }
 
 .solutions li::before {
   content: "■";
   position: absolute;
   left: 0;
-  color: #0b5ed7;
+  color: #38bdf8;
 }
 
-/* ===== Products ===== */
+/* =========================
+   PRODUCTS
+   ========================= */
 .products {
-  background-color: #ffffff;
+  background-color: #0f172a;
 }
 
 .product {
   border-left: 4px solid #0b5ed7;
   padding-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
-/* ===== Why Us ===== */
+/* =========================
+   WHY US
+   ========================= */
 .why-us {
-  background-color: #0f172a;
-  color: #e5e7eb;
+  background-color: #020617;
 }
 
 .why-us ul {
   list-style: none;
+  max-width: 720px;
 }
 
 .why-us li {
-  margin-bottom: 12px;
-  padding-left: 20px;
+  margin-bottom: 14px;
+  padding-left: 22px;
   position: relative;
 }
 
@@ -140,13 +173,14 @@ p {
   content: "✓";
   position: absolute;
   left: 0;
-  color: #38bdf8;
+  color: #22d3ee;
 }
 
-/* ===== Contact CTA ===== */
+/* =========================
+   CONTACT CTA
+   ========================= */
 .contact-cta {
-  background-color: #020617;
-  color: #ffffff;
+  background-color: #000000;
   text-align: center;
 }
 
@@ -156,6 +190,6 @@ p {
 }
 
 .contact-cta .btn {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
