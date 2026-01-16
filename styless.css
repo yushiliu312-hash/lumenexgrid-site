@@ -1,0 +1,161 @@
+/* ===== Base Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+/* ===== Common ===== */
+section {
+  padding: 80px 10%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  max-width: 720px;
+  margin-bottom: 20px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  margin-right: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #0b5ed7;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background-color: #084298;
+}
+
+.btn.secondary {
+  border: 2px solid #0b5ed7;
+  color: #0b5ed7;
+}
+
+.btn.secondary:hover {
+  background-color: #0b5ed7;
+  color: #ffffff;
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(
+      rgba(15, 23, 42, 0.85),
+      rgba(15, 23, 42, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1581092334494-2c1c8b0f6f16");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 120px 10%;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+/* ===== Solutions ===== */
+.solutions {
+  background-color: #f8fafc;
+}
+
+.solutions ul {
+  list-style: none;
+}
+
+.solutions li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.solutions li::before {
+  content: "■";
+  position: absolute;
+  left: 0;
+  color: #0b5ed7;
+}
+
+/* ===== Products ===== */
+.products {
+  background-color: #ffffff;
+}
+
+.product {
+  border-left: 4px solid #0b5ed7;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+/* ===== Why Us ===== */
+.why-us {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.why-us ul {
+  list-style: none;
+}
+
+.why-us li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.why-us li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #38bdf8;
+}
+
+/* ===== Contact CTA ===== */
+.contact-cta {
+  background-color: #020617;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contact-cta p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-cta .btn {
+  margin-top: 20px;
+}
+
